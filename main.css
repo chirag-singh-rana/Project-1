@@ -1,0 +1,666 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.chirag{
+    display: block;
+    float: left;
+    height: 70px;
+    widows: 70px;
+}
+.menu{
+    margin-left: 5vw;
+}
+#page-1{
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    background-image: url("pink.jpg");
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+    display: block;
+
+}
+
+/* .container {
+    height: 100vh;
+    width: 100%;
+} */
+
+/* #page1 {
+    background-image: url("pink.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+} */
+
+.headerpage1 {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(221, 51, 80);
+    padding: 0, 20px;
+}
+
+.headerpage1 h2 {
+    line-height: 70px;
+    font-size: 25px;
+    float: left;
+    text-transform: uppercase;
+    color: white;
+}
+
+.headerpage1 .menu {
+    list-style: none;
+    float: right;
+}
+
+.menu li {
+    display: inline-block;
+    line-height: 70px;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    transition: .4s;
+    color: white;
+}
+
+.show-btn,
+.hide-btn {
+    font-size: 30px;
+    color: white;
+    line-height: 70px;
+    margin: 0px 15px;
+    display: none;
+}
+
+.show-btn {
+    float: right;
+}
+
+#chk {
+    position: absolute;
+    visibility: hidden;
+    z-index: -10;
+}
+.section2{
+    font-size: 120px;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.section1 {
+    font-size: 70px;
+    /* font-family: 'Yanone Kaffeesatz', sans-serif; */
+    /* font-family: 'Indie Flower', cursive; */
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    margin-top: 5vh;
+    /* margin-left: 7vw; */
+    color: black;
+}
+
+
+.page1btn {
+    font-size: 40px;
+    background-color: pink;
+    /* margin-top: 1vh; */
+
+}
+
+@media (max-width: 950px) {
+    .section2{
+        font-size: 90px;
+        font-family: 'Bangers', cursive;
+        text-align: center;
+        margin-top: 25vh;
+    }
+    .section1 {
+        font-size: 40px;
+        font-family: 'Bangers', cursive;
+        text-align: center;
+        margin-top: 5vh;
+        /* margin-left: 7vw; */
+        color: black;
+    }
+    .headerpage1 h2{
+        font-size: 15px;
+    }
+    .page1btn {
+        font-size: 34px;
+        background-color: pink;
+        margin-top: 2vh;
+    
+    }
+
+    .show-btn,
+    .hide-btn {
+        display: block;
+    }
+
+    .menu li {
+        display: block;
+        padding: 20px 0;
+    }
+
+    .li a {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        background-color: black;
+        text-align: center;
+        transition: .7s;
+        line-height: normal;
+    }
+
+    .hide-btn {
+        position: absolute;
+        right: 5px;
+        top: 10px;
+    }
+
+    #chk:checked~.menu {
+        right: 0;
+        z-index: 1;
+    }
+}
+
+/* page2 */
+
+#page-2{
+    height: 60vh;
+    background-image: url("yellow.jpg");
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+}
+.heading-page2{
+    text-align: center;
+    color: white;
+    font-size: 7vh;
+}
+
+#service-1,
+#service-2,
+#service-3,
+#service-4 {
+    margin-top: 4vh;
+    background-color: yellow;
+    width: 60vw;
+    font-size: 5vh;
+    font-family: 'Srisakdi', cursive;
+}
+
+#service-2 {
+    margin-left: 12vw;
+}
+
+#service-3 {
+    margin-left: 22vw;
+}
+
+#service-4 {
+    margin-left: 32vw;
+}
+
+@media screen and (min-width: 1055px) and (max-width: 1300px) {
+
+    #service-1,
+    #service-2,
+    #service-3,
+    #service-4 {
+        font-size: 4vh;
+        /* margin-top: 20px; */
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1055px) {
+
+    #service-1,
+    #service-2,
+    #service-3,
+    #service-4 {
+        font-size: 3.5vh;
+        width:70vw;
+    }
+    #service-2 {
+    margin-left: 8vw;
+}
+
+#service-3 {
+    margin-left: 18vw;
+}
+
+#service-4 {
+    margin-left:28vw;
+}
+}
+
+@media screen and(min-width: 600px) and (max-width: 800px) {
+
+    #service-1,
+    #service-2,
+    #service-3,
+    #service-4 {
+        font-size: 3.3vh;
+        width: 75vw;
+    }
+    #service-2 {
+    margin-left: 6vw;
+}
+
+#service-3 {
+    margin-left: 16vw;
+}
+
+#service-4 {
+    margin-left:26vw;
+}
+}
+@media screen  and (max-width: 600px) {
+
+#service-1,
+#service-2,
+#service-3,
+#service-4 {
+font-size: 3.5vh;
+width: 80vw;
+}
+#service-2 {
+margin-left: 4vw;
+}
+
+#service-3 {
+margin-left: 14vw;
+}
+
+#service-4 {
+margin-left:24vw;
+}
+}
+
+/* page-3 */
+#page-3{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100vh;
+    background-image: url("q.jpg");
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(1px); */
+
+}
+
+#page-4{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100vh;
+    background-image: url("k.jpg");
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(1px); */
+
+}
+
+
+#page-3 .types {
+    border: 3px solid brown;
+    width: 26%;
+    height: 40vh;
+    margin: 1vh 3vw;
+    box-sizing: border-box;
+    display: flex;
+    border-radius: 50%;
+    opacity: 1;
+    /* background-color: rgb(250, 250, 78); */
+    font-family: 'Bangers', cursive;
+    filter: contrast(130%);
+}
+#page-4 .types {
+    border: 3px solid brown;
+    width: 26%;
+    height: 40vh;
+    margin: 1vh 3vw;
+    box-sizing: border-box;
+    display: flex;
+    /* border-radius: 50%; */
+    opacity: 1;
+    /* background-color: rgb(250, 250, 78); */
+    font-family: 'Bangers', cursive;
+    filter: contrast(130%);
+}
+#types-1{
+    background-image: url("birthday-back.jpg");
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+    /* filter: blur(1px); */
+}
+
+#types-1:hover{
+    color: white;
+    opacity: .95;
+}
+#types-2{
+    background-image: url("anniversary_back.jpg");
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+}
+/* #types-2 .z:hover{
+    color: black;
+    opacity: 1;
+} */
+
+#types-3{
+    background-image: url("kids-back.jpg");
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+
+#types-3:hover{
+    color: white;
+    opacity: .95;
+}
+#types-4{
+    background-image: url("theme-back.jpg");
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+}
+
+#types-4:hover{
+    color: white;
+    opacity: .95;
+}
+#types-5{
+    background-image: url("eggless-back.jpg");
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+}
+
+#types-5:hover{
+    color: white;
+    opacity: .95;
+}
+#types-6{
+    background-image: url("picture-back.jpg");
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+}
+
+#types-6:hover{
+    color: white;
+    opacity: .95;
+}
+.types:hover {
+    box-shadow: -7px -10px black;
+    opacity: 1;
+    color: white;
+}
+.z{
+    background-color: white;
+    color: rgb(0, 0, 0);
+        text-decoration: none;
+        opacity: 1;
+        filter: contrast(270%);
+}
+
+.item {
+    align-self: center;
+    color: black;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    opacity: 1;
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+}
+.head_page3{
+    align-self: center;
+}
+
+
+
+@media screen and (min-width: 1280px) and (max-width:1560px) {
+    .types {
+        width: 27%;
+        height: 38vh;
+        margin: 2vh 3vw;
+    }
+
+    .item {
+        font-size: 50px;
+    }
+    
+}
+
+@media screen and (min-width: 1120px) and (max-width:1280px) {
+    .types {
+        width: 27%;
+        height: 30vh;
+        margin: 4vh 3vw;
+    }
+
+    .item {
+        font-size: 39px;
+    }
+    
+}
+
+@media screen and (min-width: 800px) and (max-width:1120px) {
+    .types {
+        width: 27%;
+        height: 22vh;
+        margin: 8vh 3vw;
+    }
+
+    .item {
+        font-size: 36px;
+    }
+    
+}
+
+@media screen and (min-width: 650px) and (max-width:800px) {
+    .types {
+        width: 37%;
+        height: 25vh;
+        margin: 1vh 6vw;
+    }
+    
+    .item {
+        font-size: 34px;
+    }
+    
+}
+
+@media screen and (min-width:450px) and (max-width:650px) {
+    .types {
+        width: 43%;
+        height: 28vh;
+        margin: 1vh 1vw;
+    }
+    
+    .item {
+        font-size: 27px;
+    }
+    
+}
+
+@media screen and (min-width: 350px) and (max-width:450px) {
+    .types {
+        width: 45%;
+        height: 23vh;
+        margin: 1vh 1vw;
+    }
+    
+    .item {
+        font-size: 22px;
+    }
+    
+}
+
+@media screen and (max-width:350px) {
+    .types {
+        width: 41%;
+        height: 20vh;
+        margin: 1vh 3vw;
+    }
+    
+    .item {
+        font-size: 15px;
+    }
+    
+}
+
+/* page4 */
+
+
+/* themecake */
+#themepage{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(133, 195, 231);
+}
+
+.box {
+    /* border: 3px solid black; */
+    width: 23%;
+    height: 400px;
+    margin: 10px 8px;
+    box-sizing: border-box;
+    opacity: 1;
+}
+.box:hover{
+    box-shadow: -7px -10px black;
+    background-color: black;
+    color: white;
+    /* border: 1px solid white; */
+    
+}
+
+.photo {
+    width: 100%;
+    height: 60%;
+}
+
+.cake_name {
+    font-size: 24px;
+    font-family: 'Permanent Marker', cursive;
+    /* padding: auto; */
+}
+
+.detail {
+    font-size: 18px;
+    /* font-family: 'Satisfy', cursive; */
+    /* font-family: 'Lobster Two', cursive; */
+    font-family: 'Orbitron', sans-serif;
+}
+
+.button {
+    border: 3px solid black;
+    width: 98%;
+    text-align: center;
+    background-color: yellow;
+}
+
+.OrderNow {
+    box-sizing: border-box;
+    font-size: 23px;
+    text-decoration: none;
+    font-family: 'Acme', sans-serif;
+
+}
+
+@media screen and (min-width:816px) and (max-width:1232px) {
+    .box {
+        width: 31%;
+        height: 384px;
+    }
+
+    .cake_name {
+        font-size: 21px;
+    }
+
+    .detail {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width:520px)and (max-width:816px) {
+    .box {
+        width: 30%;
+        height: 375px;
+    }
+
+    .cake_name {
+        font-size: 22px;
+    }
+
+    .detail {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width:340px)and (max-width:530px) {
+    .box {
+        width: 45%;
+        height: 340px;
+    }
+
+    .cake_name {
+        font-size: 17px;
+    }
+
+    .detail {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .box {
+        width: 40%;
+        height: 220px;
+    }
+
+    .cake_name {
+        font-size: 9px;
+    }
+
+    .detail {
+        font-size: 9px;
+    }
+
+    .OrderNow {
+        font-size: 10px;
+    }
+}
